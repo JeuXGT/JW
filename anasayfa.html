@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>JW - Ana Sayfa
+  </title>
+  <style>
+    :root{--bg:#0f1724;--card:#0b1220;--accent:#06b6d4;--glass:rgba(255,255,255,0.04)}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Inter,system-ui,Segoe UI,Roboto,Arial;min-height:100vh;background:linear-gradient(180deg,#071025 0%, #0b1220 100%);color:#e6eef6;display:flex;align-items:center;justify-content:center;padding:24px}
+    .wrap{width:100%;max-width:980px}
+    .card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));border-radius:14px;padding:28px;box-shadow:0 8px 30px rgba(2,6,23,0.6);backdrop-filter:blur(6px)}
+    header{display:flex;align-items:center;gap:16px}
+    .logo{width:64px;height:64px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#0ea5a4);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:20px;color:#022;}
+    h1{margin:0;font-size:20px}
+    p.lead{margin:4px 0 0;color:rgba(230,238,246,0.75)}
+
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px;margin-top:20px}
+    .btn{display:flex;align-items:center;gap:12px;padding:14px;border-radius:10px;background:var(--glass);text-decoration:none;color:inherit;border:1px solid rgba(255,255,255,0.03);transition:transform .12s ease, box-shadow .12s ease}
+    .btn:hover{transform:translateY(-4px);box-shadow:0 10px 30px rgba(2,6,23,0.6)}
+    .btn .icon{width:36px;height:36px;border-radius:8px;background:linear-gradient(180deg,rgba(255,255,255,0.03),rgba(255,255,255,0.01));display:flex;align-items:center;justify-content:center}
+    .btn small{display:block;color:rgba(230,238,246,0.65)}
+
+    footer{margin-top:18px;text-align:right;color:rgba(230,238,246,0.6);font-size:13px}
+
+    /* responsive tweaks */
+    @media (max-width:420px){header{gap:12px}.logo{width:56px;height:56px}}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <header>
+        <div class="logo">JW</div>
+        <div>
+          <h1>JeuX/Windes - Anasayfa</h1>
+          <p class="lead">Hızlı Erişim: Son depremler, Oyun Kanallarımız Hepsi Bir Sitede!</p>
+        </div>
+      </header>
+
+      <div class="grid" style="margin-top:22px">
+        <!-- Butonları buradan düzenleyin: href içindeki linkleri kendi linklerinizle değiştirin -->
+        <a class="btn" href="https://deprembg.vercel.app" target="_blank" rel="noopener noreferrer">
+          <div class="icon">📡</div>
+          <div>
+            <strong>Deprem Bilgi</strong>
+            <small>Son depremler, uyarılar ve kaynaklar</small>
+          </div>
+        </a>
+
+        <a class="btn" href="https://www.youtube.com/@jeuxvalorant" target="_blank" rel="noopener noreferrer">
+          <div class="icon">▶️</div>
+          <div>
+            <strong>JeuX'un Oyun YouTube Kanalı</strong>
+            <small>Oyun Videoları</small>
+          </div>
+        </a>
+
+        <a class="btn" href="https://www.youtube.com/@jeuxvalorant-canlı/live" target="_blank" rel="noopener noreferrer">
+          <div class="icon">📺</div>
+          <div>
+            <strong>JeuX'un Oyun Canlı Youtube Kanalı</strong>
+            <small>Canlı Yayında Oyun Videoları</small>
+          </div>
+        </a>
+
+        <a class="btn" href="https://hilal-bot.vercel.app" target="_blank" rel="noopener noreferrer">
+          <div class="icon">🤖</div>
+          <div>
+            <strong>JeuX'un Discord Botunun Sitesi</strong>
+            <small>JeuX'un Discord Botu Hilal-Bot'un Sitesi</small>
+          </div>
+        </a>
+
+      <footer>!!BU SİTELERİN TÜM HAKLARI SAKLIDIR!!</footer>
+    </div>
+  </div>
+</body>
+</html>
